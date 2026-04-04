@@ -2,19 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=Auto, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledger</title>
 </head>
 <body>
     <header>
-        <h1>Personal Expence Tracker.</h1>
-        <p>Manage your daily expences.</p>
+        <div class="header-division">
+            <a href="" class="site-logo">Ledger</a>
+            <nav class="nav-bar">
+                <div class="navbar-division">
+                    <ul class="pages-list">
+                        <ol class="other-pages">
+                            <a href=""class="">Home</a>
+                        </ol>
+                    </ul>
+                    <div class="access-division">
+                        <a href="" class="access-link">LogIn</a>
+                        <a href=""class="access-link">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-
+    <main id="main-content">
+        <section class="hero-section">
+            <div class="hero-section-division">
+                <h1>
+                        <span>Stop guessing, Start tracking!</span>
+                </h1>
+                <p>Your money tells a story. This simple, secure tracker helps you write a better one by turning daily spending habits into clear financial goals. No jargon, just clarity.</p>
+                <button>Start Tracking</button>
+            </div>
+        </section>
+        <section class="features-services">
+            <h1>Every thing you need, Nothing you don't!</h1>
+            <ul>
+                <div class="feature-list">
+                    <li>
+                        <h3>Frictionless Data Entry:</h3>
+                        <p>Log your daily expenses in seconds with a clean, optimized form that doesn't ask for unnecessary details.</p>
+                    </li>
+                    <li>
+                        <h3>Smart Categorization:</h3>
+                        <p>Group your spending into logical buckets (like Groceries, Utilities, or Entertainment) so you always know exactly where your money is going.</p>
+                    </li><li>
+                        <h3>Visual Insight:</h3>
+                        <p>Instantly see your spending habits through easy-to-read charts and daily summaries, turning raw data into financial intelligence.</p>
+                    </li>
+                <li>
+                    <h3>Search and Filter History:</h3>
+                    <p>Never lose a receipt again. Instantly pull up past transactions by date, category, or amount.</p>
+                </li>
+                <li>
+                    <h3>Local & Secure:</h3>
+                    <p>Your financial data stays right here in your browser. No external databases, no privacy worries.</p>
+                    </li>
+                </div>
+            </ul>
+        </section>   
     </main>
     <footer>
-
+        <div>
+            <ul>
+                <li>&copy;<span id="current-year"></span> Ledger</li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Cookies</a></li>
+            </ul>
+        </div>
     </footer>
+    <script>document.getElementById("current-year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
