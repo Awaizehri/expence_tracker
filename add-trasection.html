@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledger | Add Transaction</title>
+</head>
+<body>
+    <h1>Make a Transaction.</h1>
+    <form action="">
+        <label for="transaction-type">Transaction Type:</label>
+        <select name="transaction" id="transaction-type">
+            <option value="" disabled selected>Transaction Type:</option>
+            <option value="" >Income</option>
+            <option value="" >Expense</option>
+        </select>
+        <label for="transaction-amount">Amount:</label>
+        <input type="number" id="transaction-amount" name="amount" step="0.01" placeholder="0.00" required>
+
+        <label for="transaction-category">Category:</label>
+        <select name="category" id="transaction-category" required>
+            <option value="" disabled selected>Select Category:</option>
+            <option value="food">Food</option>
+            <option value="garments">Garments</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="transportation">Transportation</option>
+            <option value="saving">Saving</option>
+            <option value="education">Education</option>
+            <option value="entertainment">Entertainment</option>     
+
+        </select>
+        <label for="transaction-date">Date:</label>
+        <input type="date" id="transaction-date" name="date" value="2000-01-13">
+
+        <label for="transaction-description">Description: (Optional)</label>
+        <textarea name="description" id="transaction-description" placeholder="What was this for? "></textarea>
+        <!-- <input type="text"> -->
+         <button type="submit">Record Transaction</button>
+    </form>
+</body>
+</html>
